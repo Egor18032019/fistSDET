@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
+import pages.base.PageBase;
 
 public class LoginPage extends PageBase {
     public LoginPage(WebDriver driver) {
