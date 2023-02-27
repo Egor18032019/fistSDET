@@ -20,7 +20,7 @@ public class LoginPage extends PageBase {
     WebElement loginBtn;
     @FindBy(xpath = "//div//h3")
     public WebElement errorMsgTxt;
-    public void UserLogin(String username, String password) {
+    public void authorizationOldUser(String username, String password) {
         PageBase.setTextElementText(userName, username);
         PageBase.setTextElementText(passwordInput, password);
         PageBase.clickButton(loginBtn);

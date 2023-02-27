@@ -5,6 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 
+import static cons.Cons.*;
+
 public class TestCase extends BaseCase {
     LoginPage loginPage;
     ProductsPage productsPage;
@@ -12,20 +14,20 @@ public class TestCase extends BaseCase {
     CheckoutPage checkoutPage;
     OverviewPage overviewPage;
     CompletePage completePage;
-    String username = "standard_user";
-    String password = "secret_sauce";
+    final String username = "standard_user";
+    final String password = "secret_sauce";
+    final String testWrongUsername = "test";
+    final String testWrongPassword = "test";
 
-//    @DisplayName()
     @Test(priority = 1, alwaysRun = true)
     public void userCanLoginSuccessfully() {
         loginPage = new LoginPage(BaseCase.driver);
-        loginPage.UserLogin(username, password);
+        loginPage.authorizationOldUser(username, password);
         String url = BaseCase.driver.getCurrentUrl();
-        Assert.assertEquals(url, "https://www.saucedemo.com/inventory.html");
+        Assert.assertEquals(url, urlInventory);
     }
 
-    //TODO вынести все урлы в отдельный енум ? класс?
-    @Test(priority = 2, alwaysRun = false, dependsOnMethods = {"userCanLoginSuccessfully"}, groups = "fistCase")
+    @Test(priority = 2, dependsOnMethods = {"userCanLoginSuccessfully"}, groups = "fistCase")
     public void chooseProduct() {
         productsPage = new ProductsPage(BaseCase.driver);
         System.out.println("продукт ");
@@ -33,7 +35,7 @@ public class TestCase extends BaseCase {
         System.out.println("добавили в корзину");
         productsPage.goToCart();
         String url = BaseCase.driver.getCurrentUrl();
-        Assert.assertEquals(url, "https://www.saucedemo.com/cart.html");
+        Assert.assertEquals(url, urlCart);
     }
 
     @Test(priority = 3, dependsOnMethods = {"chooseProduct"}, groups = "fistCase")
@@ -41,7 +43,7 @@ public class TestCase extends BaseCase {
         cartPage = new CartPage(BaseCase.driver);
         cartPage.clickCheckout();
         String url = BaseCase.driver.getCurrentUrl();
-        Assert.assertEquals(url, "https://www.saucedemo.com/checkout-step-one.html");
+        Assert.assertEquals(url, urlStepOne);
     }
 
     @Test(priority = 4, dependsOnMethods = {"cartClickCheckout"}, groups = "fistCase")
@@ -49,7 +51,7 @@ public class TestCase extends BaseCase {
         checkoutPage = new CheckoutPage(BaseCase.driver);
         checkoutPage.checkoutStep("test", "test", "test");
         String url = BaseCase.driver.getCurrentUrl();
-        Assert.assertEquals(url, "https://www.saucedemo.com/checkout-step-two.html");
+        Assert.assertEquals(url, urlStepTwo);
     }
 
     @Test(priority = 5, dependsOnMethods = {"fillCheckout"}, groups = "fistCase")
@@ -57,22 +59,22 @@ public class TestCase extends BaseCase {
         overviewPage = new OverviewPage(BaseCase.driver);
         overviewPage.clickFinish();
         String url = BaseCase.driver.getCurrentUrl();
-        Assert.assertEquals(url, "https://www.saucedemo.com/checkout-complete.html");
+        Assert.assertEquals(url, urlCheckout);
     }
 
     @Test(priority = 6, dependsOnMethods = {"overviewClickFinish"}, groups = "fistCase")
     public void checkComplete() {
         completePage = new CompletePage(BaseCase.driver);
         String url = BaseCase.driver.getCurrentUrl();
-        Assert.assertEquals(url, "https://www.saucedemo.com/checkout-complete.html");
+        Assert.assertEquals(url, urlCheckout);
         Assert.assertTrue(completePage.successPurchase.getText().contains("THANK YOU FOR YOUR ORDER"));
     }
 
     @Test(priority = 7, alwaysRun = true, groups = "second Case")
     public void userNoCanLoginSuccessfully() {
-        driver.navigate().to("https://www.saucedemo.com/");
+        driver.navigate().to(urlMain);
         loginPage = new LoginPage(driver);
-        loginPage.UserLogin("test", "test");
+        loginPage.authorizationOldUser(testWrongUsername, testWrongPassword);
         Assert.assertTrue(loginPage.errorMsgTxt.getText().contains("Epic sadface: Username and password do not match any user in this service"));
     }
 }
