@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeSuite;
 
 import java.time.Duration;
 
+import static cons.Cons.urlMain;
+
 public class BaseCase {
 
     public static WebDriver driver;
@@ -21,7 +23,7 @@ public class BaseCase {
         driver.manage().window().maximize();
         //Задержка выполнения теста
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(22));
-        driver.navigate().to("https://www.saucedemo.com/");
+        driver.navigate().to(urlMain);
     }
 
     @AfterSuite( )
