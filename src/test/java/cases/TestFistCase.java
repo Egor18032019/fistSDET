@@ -7,7 +7,7 @@ import pages.*;
 
 import static cons.Cons.*;
 
-public class TestCase extends BaseCase {
+public class TestFistCase extends BaseCase {
     LoginPage loginPage;
     ProductsPage productsPage;
     CartPage cartPage;
@@ -16,8 +16,6 @@ public class TestCase extends BaseCase {
     CompletePage completePage;
     final String username = "standard_user";
     final String password = "secret_sauce";
-    final String testWrongUsername = "test";
-    final String testWrongPassword = "test";
 
     @Test(priority = 1, alwaysRun = true)
     public void userCanLoginSuccessfully() {
@@ -67,14 +65,9 @@ public class TestCase extends BaseCase {
         String url = BaseCase.driver.getCurrentUrl();
         Assert.assertEquals(url, urlCheckout);
         String text = completePage.successPurchase.getText().toUpperCase();
+        // в фаерфоксе пишется большими буквами в гугле маленькими
         Assert.assertTrue(text.contains("THANK YOU FOR YOUR ORDER"));
     }
 
-    @Test(priority = 7, alwaysRun = true, groups = "second Case")
-    public void userNoCanLoginSuccessfully() {
-        driver.navigate().to(urlMain);
-        loginPage = new LoginPage(driver);
-        loginPage.authorizationOldUser(testWrongUsername, testWrongPassword);
-        Assert.assertTrue(loginPage.errorMsgTxt.getText().contains("Epic sadface: Username and password do not match any user in this service"));
-    }
+
 }

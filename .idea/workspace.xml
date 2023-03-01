@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cons/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cons/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cases/DraftSecondCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestSecondCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestFistCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestCase">
+  <component name="RunManager" selected="TestNG.TestFistCase">
     <configuration name="fistSDET [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -84,7 +82,7 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="TestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFistCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="fistSDET" />
       <extension name="coverage">
         <pattern>
@@ -93,7 +91,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cases" />
-      <option name="MAIN_CLASS_NAME" value="cases.TestCase" />
+      <option name="MAIN_CLASS_NAME" value="cases.TestFistCase" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -162,14 +160,14 @@
     </configuration>
     <list>
       <item itemvalue="Maven.fistSDET [test]" />
-      <item itemvalue="TestNG.TestCase" />
+      <item itemvalue="TestNG.TestFistCase" />
       <item itemvalue="TestNG.TestSecondCase" />
       <item itemvalue="TestNG.firstCase" />
       <item itemvalue="TestNG.secondCase" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestCase" />
+        <item itemvalue="TestNG.TestFistCase" />
         <item itemvalue="TestNG.TestSecondCase" />
         <item itemvalue="Maven.fistSDET [test]" />
         <item itemvalue="TestNG.firstCase" />
@@ -193,7 +191,7 @@
       <workItem from="1677396160661" duration="470000" />
       <workItem from="1677396688433" duration="1644000" />
       <workItem from="1677408752911" duration="801000" />
-      <workItem from="1677499444906" duration="7976000" />
+      <workItem from="1677499444906" duration="9380000" />
     </task>
     <servers />
   </component>
@@ -227,8 +225,8 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cases/TestCase.java</url>
-          <line>69</line>
+          <url>file://$PROJECT_DIR$/src/test/java/cases/TestFistCase.java</url>
+          <line>68</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
