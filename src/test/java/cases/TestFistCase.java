@@ -7,7 +7,7 @@ import pages.*;
 
 import static cons.Cons.*;
 
-public class TestCase extends BaseCase {
+public class TestFistCase extends BaseCase {
     LoginPage loginPage;
     ProductsPage productsPage;
     CartPage cartPage;
@@ -16,23 +16,20 @@ public class TestCase extends BaseCase {
     CompletePage completePage;
     final String username = "standard_user";
     final String password = "secret_sauce";
-    final String testWrongUsername = "test";
-    final String testWrongPassword = "test";
 
     @Test(priority = 1, alwaysRun = true)
     public void userCanLoginSuccessfully() {
-        loginPage = new LoginPage(BaseCase.driver);
+        loginPage = new LoginPage(driver);
         loginPage.authorizationOldUser(username, password);
-        String url = BaseCase.driver.getCurrentUrl();
+//        wait.until(Ex)
+        String url = driver.getCurrentUrl();
         Assert.assertEquals(url, urlInventory);
     }
 
     @Test(priority = 2, dependsOnMethods = {"userCanLoginSuccessfully"}, groups = "fistCase")
     public void chooseProduct() {
-        productsPage = new ProductsPage(BaseCase.driver);
-        System.out.println("продукт ");
+        productsPage = new ProductsPage(driver);
         productsPage.addInCart();
-        System.out.println("добавили в корзину");
         productsPage.goToCart();
         String url = BaseCase.driver.getCurrentUrl();
         Assert.assertEquals(url, urlCart);
@@ -63,18 +60,14 @@ public class TestCase extends BaseCase {
     }
 
     @Test(priority = 6, dependsOnMethods = {"overviewClickFinish"}, groups = "fistCase")
-    public void checkComplete() {
+    public void checkComplete() throws InterruptedException {
         completePage = new CompletePage(BaseCase.driver);
         String url = BaseCase.driver.getCurrentUrl();
         Assert.assertEquals(url, urlCheckout);
-        Assert.assertTrue(completePage.successPurchase.getText().contains("THANK YOU FOR YOUR ORDER"));
+        String text = completePage.successPurchase.getText().toUpperCase();
+        // в фаерфоксе пишется большими буквами в гугле маленькими
+        Assert.assertTrue(text.contains("THANK YOU FOR YOUR ORDER"));
     }
 
-    @Test(priority = 7, alwaysRun = true, groups = "second Case")
-    public void userNoCanLoginSuccessfully() {
-        driver.navigate().to(urlMain);
-        loginPage = new LoginPage(driver);
-        loginPage.authorizationOldUser(testWrongUsername, testWrongPassword);
-        Assert.assertTrue(loginPage.errorMsgTxt.getText().contains("Epic sadface: Username and password do not match any user in this service"));
-    }
+
 }
