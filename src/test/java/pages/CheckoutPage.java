@@ -17,7 +17,7 @@ public class CheckoutPage extends PageBase {
 
     @FindBy(xpath = "//input[@id='postal-code']")
     WebElement postal;
-//OVERVIEW
+
     @FindBy(id = "continue")
     WebElement continueBtn;
 
