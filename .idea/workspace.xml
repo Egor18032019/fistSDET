@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/errorScreenshots/userCanLoginSuccessfully-[].jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/DraftSecondCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestSecondCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestFistCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestSecondCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestSecondCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -36,21 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Hobby/Git/SDET/backend",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Teacher/Git/fistSDET&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -99,6 +107,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestFistCase.userCanLoginSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fistSDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cases" />
+      <option name="MAIN_CLASS_NAME" value="cases.TestFistCase" />
+      <option name="METHOD_NAME" value="userCanLoginSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSecondCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="fistSDET" />
       <extension name="coverage">
@@ -137,41 +163,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="secondCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="fistSDET" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="cases" />
-      <option name="MAIN_CLASS_NAME" value="cases.base.secondCase" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Maven.fistSDET [test]" />
+      <item itemvalue="TestNG.TestFistCase.userCanLoginSuccessfully" />
       <item itemvalue="TestNG.TestFistCase" />
       <item itemvalue="TestNG.TestSecondCase" />
       <item itemvalue="TestNG.firstCase" />
-      <item itemvalue="TestNG.secondCase" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestFistCase" />
         <item itemvalue="TestNG.TestSecondCase" />
+        <item itemvalue="TestNG.TestFistCase.userCanLoginSuccessfully" />
         <item itemvalue="Maven.fistSDET [test]" />
         <item itemvalue="TestNG.firstCase" />
-        <item itemvalue="TestNG.secondCase" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +197,9 @@
       <workItem from="1677396688433" duration="1644000" />
       <workItem from="1677408752911" duration="801000" />
       <workItem from="1677499444906" duration="9380000" />
+      <workItem from="1678466255262" duration="1211000" />
+      <workItem from="1678545577923" duration="2583000" />
+      <workItem from="1678548220634" duration="606000" />
     </task>
     <servers />
   </component>
@@ -212,6 +220,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -228,6 +239,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/cases/TestFistCase.java</url>
           <line>68</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
