@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/errorScreenshots/userCanLoginSuccessfully-[].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cases/TestScreenshot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestSecondCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestSecondCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errorScreenshots/userCanLoginSuccessfully-[].jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestFistCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestFistCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,32 +64,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestFistCase">
-    <configuration name="fistSDET [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="test" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestScreenshot.screenshotLogin">
     <configuration name="TestFistCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="fistSDET" />
       <extension name="coverage">
@@ -125,6 +100,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestScreenshot" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fistSDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cases" />
+      <option name="MAIN_CLASS_NAME" value="cases.TestScreenshot" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestScreenshot.screenshotLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="fistSDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cases" />
+      <option name="MAIN_CLASS_NAME" value="cases.TestScreenshot" />
+      <option name="METHOD_NAME" value="screenshotLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSecondCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="fistSDET" />
       <extension name="coverage">
@@ -142,41 +152,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="fistSDET" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="cases" />
-      <option name="MAIN_CLASS_NAME" value="cases.base.firstCase" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Maven.fistSDET [test]" />
+      <item itemvalue="TestNG.TestScreenshot" />
+      <item itemvalue="TestNG.TestScreenshot.screenshotLogin" />
       <item itemvalue="TestNG.TestFistCase.userCanLoginSuccessfully" />
       <item itemvalue="TestNG.TestFistCase" />
       <item itemvalue="TestNG.TestSecondCase" />
-      <item itemvalue="TestNG.firstCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestScreenshot.screenshotLogin" />
+        <item itemvalue="TestNG.TestScreenshot" />
         <item itemvalue="TestNG.TestFistCase" />
         <item itemvalue="TestNG.TestSecondCase" />
         <item itemvalue="TestNG.TestFistCase.userCanLoginSuccessfully" />
-        <item itemvalue="Maven.fistSDET [test]" />
-        <item itemvalue="TestNG.firstCase" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +231,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java</url>
-          <line>36</line>
+          <line>34</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

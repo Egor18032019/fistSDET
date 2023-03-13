@@ -14,7 +14,7 @@ public class TestFistCase extends BaseCase {
     CheckoutPage checkoutPage;
     OverviewPage overviewPage;
     CompletePage completePage;
-    final String username = "standard_user";
+    final String username = "standard_user1";
     final String password = "secret_sauce";
 
     @Test(priority = 1, alwaysRun = true)
