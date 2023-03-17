@@ -1,8 +1,10 @@
 package cases;
 
 import cases.base.BaseCase;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -22,11 +24,12 @@ public class TestScreenshot extends BaseCase {
     public void screenshotLogin() throws IOException, InterruptedException {
         driver.navigate().to(urlMain);
         loginPage = new LoginPage(driver);
+        WebElement element = driver.findElement(By.xpath("/html/body"));
+        System.out.println(element.getAttribute("height"));
 
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        FileUtils.copyFile(scrFile, new File("originScreenshots\\" + "screenshotLogin" + ".jpg"));
         File file = new File("C:\\Hobby\\Git\\SDET\\fistSDET\\originScreenshots\\screenshotLogin.jpg");
         BufferedImage original = ImageIO.read(file);
         BufferedImage image = ImageIO.read(scrFile);
