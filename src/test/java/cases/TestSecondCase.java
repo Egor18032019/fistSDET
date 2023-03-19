@@ -13,7 +13,7 @@ public class TestSecondCase extends BaseCase {
     String username = "test";
     String password = "test";
 
-    @Test(priority = 7, alwaysRun = true, groups = "second Case")
+    @Test( alwaysRun = true, groups = "second Case")
     public void userNoCanLoginSuccessfully() {
         driver.navigate().to(urlMain);
         loginPage = new LoginPage(driver);
