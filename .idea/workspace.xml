@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="" />
+    <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestScreenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestScreenshot.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,7 +233,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cases/TestScreenshot.java</url>
-          <line>57</line>
+          <line>62</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

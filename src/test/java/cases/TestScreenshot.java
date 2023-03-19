@@ -1,6 +1,7 @@
 package cases;
 
 import cases.base.BaseCase;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,7 +25,7 @@ public class TestScreenshot extends BaseCase {
     public void screenshotLogin() throws IOException, InterruptedException {
         driver.navigate().to(urlMain);
         loginPage = new LoginPage(driver);
-//        loginPage.authorizationOldUser("username", "password");
+        loginPage.authorizationOldUser("username", "password");
         WebElement element = driver.findElement(By.xpath("/html/body"));
         System.out.println(element.getAttribute("height"));
 
@@ -41,7 +42,7 @@ public class TestScreenshot extends BaseCase {
             Assert.fail();
             return;
         }
-        //TODO сделать что бы разницу подкрашивало
+        //TODO сделать что бы разницу подкрашивало ?
         boolean answer = true;
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < columns; col++) {
@@ -49,12 +50,16 @@ public class TestScreenshot extends BaseCase {
                 int rgb2 = image.getRGB(col, row);
 
                 if (rgb != rgb2) {
-//                    original.setRGB(col,row, rgb2);
+//                    original.setRGB(col,row, rgb2 +2);
                     answer = false;
                 }
             }
 
         }
+//        File outputfile =new File("C:\\Teacher\\Git\\fistSDET\\originScreenshots\\screenshotLogin2.jpg");
+//        ImageIO.write(original, "jpg", outputfile);
+//        FileUtils.copyFile(outputfile, new File("errorScreenshots\\" + "screenshotLogin2" + ".jpg"));
+
         Assert.assertTrue(answer);
     }
 }
