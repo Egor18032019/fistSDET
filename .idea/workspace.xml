@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/originScreenshots/screenshotLogin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cases/TestScreenshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorScreenshots/userCanLoginSuccessfully-[].jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/TestFistCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/TestFistCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cases/base/BaseCase.java" afterDir="false" />
-    </list>
+    <list default="true" id="4b7d460e-1591-4f95-b5fc-952f6a332f70" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +187,7 @@
       <workItem from="1678545577923" duration="2583000" />
       <workItem from="1678548220634" duration="606000" />
       <workItem from="1679041490776" duration="1520000" />
-      <workItem from="1679227916855" duration="2795000" />
+      <workItem from="1679227916855" duration="3143000" />
     </task>
     <servers />
   </component>
