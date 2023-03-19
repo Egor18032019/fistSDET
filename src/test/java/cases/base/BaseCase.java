@@ -46,6 +46,7 @@ public class BaseCase {
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(scrFile, new File("errorScreenshots\\" + testResult.getName() + ".jpg"));
 //                    "-"+ Arrays.toString(testResult.getParameters()) +  ".jpg"));
+//            DateFormat format = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
 //            FileUtils.copyFile(screenshot, new File("./errorScreenshots/"+format.format(date).replace(":",".")+" screenshot.png"));
         }
     }
